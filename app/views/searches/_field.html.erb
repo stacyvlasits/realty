@@ -1,0 +1,25 @@
+ <% form_for(@search) do |f| %> 
+	<%= f.error_messages %>
+
+  <p>
+    <%= f.label :search, 'URL (e.g. www.example.com)' %><br />
+		Make sure you omit any leading characters like "http://"<br />
+    <%= f.text_field :search %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </p>  
+
+  <p>
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

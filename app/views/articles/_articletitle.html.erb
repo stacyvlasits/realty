@@ -1,0 +1,3 @@
+<% div_for article do %>
+	<h2><%= link_to_unless_current h(article.title), article_path(article) %></h2>
+<% end %>

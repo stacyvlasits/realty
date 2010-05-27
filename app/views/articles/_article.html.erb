@@ -1,0 +1,4 @@
+<% div_for article do %>
+	<h2><%= link_to_unless_current h(article.title), article %></h2>
+	<%= simple_format h(article.body) %>
+<% end %>

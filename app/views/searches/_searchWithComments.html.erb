@@ -1,0 +1,16 @@
+ <% div_for searchWithComments do %>
+
+      <p>
+      <%= link_to_function h(searchWithComments.title) do |page|
+          page.replace_html 'mainContent', "<iframe id='embedded' src='http://#{searchWithComments.search}' />"; end %>
+      
+      <% if admin? %>
+      <span id="rltyLinks">
+        <%= link_to 'Edit', edit_search_path(searchWithComments) %> |
+        <%= link_to 'Delete', searchWithComments, :method => :delete, :confirm => "Are you sure?" %>
+      </span>
+      <% end %>
+      </p>
+
+      <% end %>
+     <%= simple_format h(searchWithComments.comment) %>

@@ -1,0 +1,15 @@
+
+<div id="sidebar1">
+	<h2>Resources</h2>
+	<h3><%= link_to 'See All Resources', resources_path %></h3>
+	<% for resource in @resources %>
+		<h3><%= link_to h(resource.title), resource %></h3>
+	<% end %>
+</div>
+<div id="mainContent">
+	<h2>Recent resources</h2>
+	<%= render :partial => @resources %>
+<% if admin? %>
+	<%= link_to 'New resource', new_resource_path %>
+<% end %>
+</div>

@@ -1,0 +1,11 @@
+<div id="sidebar1">
+  <h2>Searches</h2>
+  <% if admin? %>
+    <%= link_to 'Add a New Search', new_search_path %>  
+  <% end %>
+  <%= render :partial => @searches %>
+</div>
+<div id="mainContent">
+	<%= render :partial => @search %>	
+
+</div>

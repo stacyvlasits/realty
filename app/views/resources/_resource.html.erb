@@ -1,0 +1,8 @@
+<% div_for resource do %>
+	<h2><%= link_to h(resource.title), "http://" + resource.link, :confirm=> "Now leaving Resort Realty..." %></h2>
+	<%= simple_format h(resource.comment) %>
+		<% if admin? %>
+		<%= link_to 'Edit', edit_resource_path(resource) %> |
+		<%= link_to 'Destroy', resource, :method => :delete, :confirm => "Are you sure?" %> |
+	<% end %>
+<% end %>

@@ -1,0 +1,27 @@
+<h1>New resource</h1>
+
+<% form_for(@resource) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title, "Title (e.g. Countrywide financing site)"  %><br />
+    <%= f.text_field :title,  :size => "80" %>
+  </p>
+
+  <p>
+    <%= f.label :link, 'URL (e.g. www.example.com)' %><br />
+    <%= f.text_field :link, :size => "80" %>
+  </p>
+  <p>
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.label :topicid %><br />
+    <%= f.text_field :topicid %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', resources_path %>

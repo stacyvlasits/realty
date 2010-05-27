@@ -1,0 +1,230 @@
+body {
+  background-color: #585043;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+/* HEADER style
+
+*/
+
+a {
+    color:#5c5447;
+    text-decoration: underline;
+}
+a:hover
+{
+    background:#FFF;
+    color:#fff;
+}
+/* HEADER DEFINITIONS
+ */
+div.header1 {
+    height: auto;
+    width: auto;
+}
+#leftimage {
+    float: left;
+    top: 0;
+    border-bottom: 2px solid #3a302d;
+}
+#rightimage {
+    float: right;
+    top: 0;
+    margin-left: 10px;
+}
+
+
+img.header{
+    margin: 0px -3px 5px 0px;
+    float:right;
+}
+
+div.header2 {
+    height: auto;
+    width: auto;
+	}
+#menu1 {
+ 
+	margin: 6px 0px 0px 0px;
+    padding:0;
+    color:#000;
+    font-family: garamond, helvetica, sans-serif;
+    font-size: 100%;
+    white-space:nowrap;
+    list-style-type:none;
+
+}
+#menu1 li {
+    display:inline;
+    float:left;
+	width: 9.7em;
+    padding:0.4em 1.03em;
+    background:#000000;
+	text-align: center;
+}
+#menu1 li a
+{
+
+
+    color:#cabdb5;
+    text-decoration:none;
+    font-weight:bold;
+    border:1px solid #000;
+
+}
+#menu1 li a:hover
+{
+    background:#883c2e;
+    color:#fff;
+}
+#menu2
+{
+    padding:0;
+    margin: 5px 50px;
+    color:#000;
+    font-family: garamond, helvetica, sans-serif;
+    font-size: 100%;
+    white-space:nowrap;
+    list-style-type:none;
+}
+#menu2 li {
+    display:inline;
+	float:left;
+    padding:0.2em 4.8em;
+    color:#585043;
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 90%;
+}
+#menu2 li a {
+    color:#883c2e;
+    text-decoration: none;
+}
+#menu2 li a:hover
+{
+    background:#883c2e;
+    color:#fff;
+}
+
+
+/* GENERAL
+
+*/
+hr {display: none;}
+img, fieldset {border: none;}
+a:link, a:visited {color: #883c2e; text-decoration: none;}
+a:hover, a:active {color: #ff7935;}
+.clear {clear: both;}
+
+/* TWO COLUMNS
+
+*/
+div.container {
+  width: 990px;
+  margin: 0 auto;
+  background-color: #f5f5db;
+  padding: 20px 20px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+#sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #dabfa2; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 5px 10px 15px 20px;
+}
+#mainContent {
+	margin: 0 0 0 250px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 5px 0px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #dabfa2;
+  border: solid 1px #dabfa2;
+}
+
+#flash_error {
+  background-color: #dabfa2;
+  border: solid 1px #dabfa2;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+/* HOME PAGE
+
+*/
+#slideshowframe {
+  float: right;
+  width: 650px;
+  border: 3px solid #883c2e;
+  margin: 0;
+  padding: 0; 
+}
+/* SEARCH PAGE
+
+*/
+#embedded {
+	width: 740px;
+	height: 650px;
+	scrollbar: no;
+	
+}
+
+#rltyLinks {
+	font-size: 75%;
+	
+}

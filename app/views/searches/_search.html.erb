@@ -1,0 +1,15 @@
+<% div_for search do %>
+
+		  <p>
+			<%= link_to_function h(search.title) do |page|
+					page.replace_html 'mainContent', "<iframe id='embedded' src='http://#{search.search}' />"; end %>
+			
+      <% if admin? %>
+		  <span id="rltyLinks">
+			  <%= link_to 'Edit', edit_search_path(search) %> |
+		    <%= link_to 'Delete', search, :method => :delete, :confirm => "Are you sure?" %>
+      </span>
+			<% end %>
+			</p>
+
+      <% end %>

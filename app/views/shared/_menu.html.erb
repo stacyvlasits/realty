@@ -1,0 +1,35 @@
+
+    <title>Resort Realty | Home</title>
+
+   <div class="header1">
+        <img id="leftimage" src="/images/Header3.jpg" alt="Resort Realty header" />
+
+   </div>
+<div class="clear"></div> 
+   <div class="header2">
+        <ul id="menu1">
+        	<li><%= link_to 'Home', home_path %></li>
+            <li><%= link_to 'Find a Property', searches_path %></li>
+            <li><%= link_to 'Articles', articles_path %></li>
+            <li><%= link_to 'Resources', resources_path %></li>
+            <li><%= link_to 'About Resort Realty', articles_path %></li>
+          <% if !admin? %>
+				    <li><%= link_to 'Login ', login_path %></li>
+			    <% end %>
+			    <% if admin? %>
+				    <li><%= link_to 'Logout', logout_path %></li>
+			    <% end %>	
+        </ul>
+<!--
+<div class="clear"></div> 
+        <ul id="menu2">
+            <li>mailing address goes here</li>
+            <li><a href="mailto:mail@resortrealty.com">email: mail@resortrealty.com</a></li>
+            <li>Phone: (555) 555-8800</li>
+        </ul>
+-->
+<div class="clear"></div> 
+
+<br />   
+    </div>
+

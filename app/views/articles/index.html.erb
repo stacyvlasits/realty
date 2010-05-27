@@ -1,0 +1,17 @@
+
+<div id="sidebar1">
+<!-- this probably should be rendered as a partial see show -->
+	<h2>Articles</h2>
+	<p id="select">Show: <%= link_to 'All', articles_path %></p>
+	<% for article in @articles %>
+		<h4><%= link_to h(article.title), article %></h4>
+	<% end %>
+</div>
+<div id="mainContent">
+	<h2>Recent Articles</h2>
+<% if admin? %>
+	<%= link_to 'New article', new_article_path %>
+<% end %>
+	<%= render :partial => @articles %>
+
+</div>

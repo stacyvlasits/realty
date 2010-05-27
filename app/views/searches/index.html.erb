@@ -1,0 +1,13 @@
+
+<div id="sidebar1">
+	<h2>Searches</h2>
+  <% if admin? %>
+    <%= link_to 'Add a New Search', new_search_path %>  
+	<% end %>
+   <p id="select">Show: <%= link_to 'All', searches_path %></p>
+	 <%= render :partial => @searches %>
+</div>
+
+<div id="mainContent">
+   <%= render :partial => "searchWithComments", :collection => @searches %>
+</div>
